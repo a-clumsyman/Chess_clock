@@ -1,3 +1,4 @@
+// home_screen.dart
 import 'package:flutter/material.dart';
 import 'package:chess_clock/timer_button.dart';
 
@@ -12,6 +13,8 @@ class HomeScreen extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            TimerButton(minutes: 1),
+            SizedBox(height: 20),
             TimerButton(minutes: 3),
             SizedBox(height: 20),
             TimerButton(minutes: 5),
